@@ -1,0 +1,281 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{68854819-E0F5-4EB9-A872-278A861DB3EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Abashkin_Denis_MDM_171_333</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\main" />
+    <None Include=".git\objects\00\5299ad636fa1b5791608bc1136543e6df39823" />
+    <None Include=".git\objects\01\92866af49a74059f8bd38053ca213a3c005eca" />
+    <None Include=".git\objects\1a\f7de150c99c12dd67a509fe57c10d63e4eeb04" />
+    <None Include=".git\objects\1e\81900ab7022b83a70bd2dba6e6b0f65966d775" />
+    <None Include=".git\objects\1e\898906820e4ac6d2759bac2175c8529605a762" />
+    <None Include=".git\objects\24\7a24d37952bf2d8e7bc6028a3b3e352e5d6ecc" />
+    <None Include=".git\objects\26\de45896ad6ab51196f938de92898c1927fd84e" />
+    <None Include=".git\objects\28\d8743a55c73ebb5159774d8b72c2e2db165978" />
+    <None Include=".git\objects\2e\943657b743ebf9ff44afb424b89e0003326768" />
+    <None Include=".git\objects\36\cdbe78dd197858dd7f3f1ae28224116daea186" />
+    <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
+    <None Include=".git\objects\39\aa1160efbcdc1e3701f12b0ce018c633d0490a" />
+    <None Include=".git\objects\3a\ce562bb2c6462a97b48f3cc20ce09aa6ffa5db" />
+    <None Include=".git\objects\3c\3fcf2e07d8a58601b0c178aeadcb99ae074cf0" />
+    <None Include=".git\objects\40\31910bfbf98009241801020c6a0b1021c2602a" />
+    <None Include=".git\objects\42\15a7145a101762254e27d8e64986c886e24a07" />
+    <None Include=".git\objects\44\b5eeceb15b74b733d436e7c70c5243d444d3f9" />
+    <None Include=".git\objects\4d\13c54854e866a814b873404ff0060ba9c7b888" />
+    <None Include=".git\objects\4f\083d52aca9cc71d07e52158e32742c7d467502" />
+    <None Include=".git\objects\56\f3019e3be1328ac6b50dfa1f1996c22a103cb9" />
+    <None Include=".git\objects\59\4c777dd6e244ac414d048fbe1561f371ee4255" />
+    <None Include=".git\objects\65\d69be442983ea244cd86b203b3952731d4ba80" />
+    <None Include=".git\objects\71\3a794663394afc4205282f1c1617f2278de6dd" />
+    <None Include=".git\objects\75\59c3286642200d60d0493a7b82fc9c74adf47a" />
+    <None Include=".git\objects\78\1ee8fec83c4b7330b262b2288e5053ae3e7ae5" />
+    <None Include=".git\objects\7e\fb70ae2999e3620eded93243e25f049d072016" />
+    <None Include=".git\objects\84\dc69b43d6b732da2bc4e320d9417e966a57f94" />
+    <None Include=".git\objects\85\094b1125012cd8cbded90b48a62adaff4fb5fa" />
+    <None Include=".git\objects\85\6922f4df7c0c7ee414c54e1831180cd135e1ea" />
+    <None Include=".git\objects\86\3ff0e55eb5ce91c2fac86c50724de38caddb9f" />
+    <None Include=".git\objects\86\59d782a7ff83d3fe75cecfdb9621845aac8b8c" />
+    <None Include=".git\objects\88\2147446d15b53a6c0d9bfeb18a190adf2f6911" />
+    <None Include=".git\objects\88\b6280e8d53cb9904fec948b73d0dcc318007cd" />
+    <None Include=".git\objects\8e\74492c5d060dc5095d0444f18b56e654535e41" />
+    <None Include=".git\objects\9d\af07caf705c84bd03d7f2a880f17ddadbe5426" />
+    <None Include=".git\objects\a0\e897bfe77294f54555e9cd602e38a1e2c7a011" />
+    <None Include=".git\objects\a4\d18b3d529784ca03ffde0bdf4e7e16621dfa47" />
+    <None Include=".git\objects\a5\dc018240294ff8c5ecb3d99ac9785d6d5dbf33" />
+    <None Include=".git\objects\a7\48531c87bfd62cf0d4dc523ff9f901370e3627" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\af\8e7d3a84ece00db5b13c8026f23113fc3b7366" />
+    <None Include=".git\objects\c2\d927ef09b6ced872d31b8e5d3db4cefb36b7e9" />
+    <None Include=".git\objects\c9\e573e1ce97d95564a58266c683f91816117f91" />
+    <None Include=".git\objects\cf\3a7d2c3241eebbf2dddafaf95f40042b2a66c2" />
+    <None Include=".git\objects\cf\42b4d115d5cf6e1ef6212cb4ce4663dafd8246" />
+    <None Include=".git\objects\cf\6a3e40f9ffc3b53170fc361e91c1f92f2a8179" />
+    <None Include=".git\objects\d4\4db1ac7d8493432196382b78c2b49f0e84682a" />
+    <None Include=".git\objects\d5\821af31e64214dd4a7429a2a0c5653dbc7f98d" />
+    <None Include=".git\objects\d6\9332dfd1dc21708bb41f6443406c62c134b50c" />
+    <None Include=".git\objects\d9\8cfd3443603a12954e816d09e1512cd3bac451" />
+    <None Include=".git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include=".git\objects\e2\00a806696769981317483534089dde475ca7a6" />
+    <None Include=".git\objects\e2\a047122c584ee39083dbe3f51149ccd2cd0d78" />
+    <None Include=".git\objects\e5\68414e17c26ef7c3db604b46cedcb5396bc50b" />
+    <None Include=".git\objects\e6\f84935d1cd0d4c4370cd0ea247af8c07a9ee70" />
+    <None Include=".git\objects\f2\e8e99b1109591733137e9c132e8b2e457d8671" />
+    <None Include=".git\objects\fd\5b037c6065f5bd3831beb26ec30833f1a9a739" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\main" />
+    <None Include=".vs\Abashkin_Denis_MDM_171-333\v16\.suo" />
+    <None Include="App.config" />
+    <None Include="DataBaseMDM.db" />
+    <None Include="DataBaseMDMStorage.db" />
+    <None Include="DatabaseMDM\DataBaseMDM.db" />
+    <None Include="DatabaseMDM\DataBaseMDM.sqbpro" />
+    <None Include="Otchet.docx" />
+    <None Include="OtchetTowar.docx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationContext.cs" />
+    <Compile Include="ApplicationContext2.cs" />
+    <Compile Include="Forms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AllPostavhikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllPostavhikForm.Designer.cs">
+      <DependentUpon>AllPostavhikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AllTowarsFormcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllTowarsFormcs.Designer.cs">
+      <DependentUpon>AllTowarsFormcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AllZakazForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllZakazForm.Designer.cs">
+      <DependentUpon>AllZakazForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DaleeNewZakazForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DaleeNewZakazForm.Designer.cs">
+      <DependentUpon>DaleeNewZakazForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewPostavhikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewPostavhikForm.Designer.cs">
+      <DependentUpon>NewPostavhikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewTowarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewTowarForm.Designer.cs">
+      <DependentUpon>NewTowarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewZakazForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewZakazForm.Designer.cs">
+      <DependentUpon>NewZakazForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StorageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StorageForm.Designer.cs">
+      <DependentUpon>StorageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Postavhik.cs" />
+    <Compile Include="Models\Storage.cs" />
+    <Compile Include="Models\Towar.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Zakaz.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllPostavhikForm.resx">
+      <DependentUpon>AllPostavhikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllTowarsFormcs.resx">
+      <DependentUpon>AllTowarsFormcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllZakazForm.resx">
+      <DependentUpon>AllZakazForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DaleeNewZakazForm.resx">
+      <DependentUpon>DaleeNewZakazForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewPostavhikForm.resx">
+      <DependentUpon>NewPostavhikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewTowarForm.resx">
+      <DependentUpon>NewTowarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewZakazForm.resx">
+      <DependentUpon>NewZakazForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StorageForm.resx">
+      <DependentUpon>StorageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\create-users-windows-10.png" />
+    <Content Include="Image\kisspng-prime-mold-removal-business-advertising-management-residential-5b255330ea1499.1856441915291727849588.jpg" />
+    <Content Include="Image\logistic-delivery-shipping-luggage-parcel-boxes-transport-warehouse-godown-storage-storehouse-2-20356.png" />
+    <Content Include="Image\png-transparent-warehouse-computer-icons-warehouse-miscellaneous-angle-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
